@@ -23,7 +23,7 @@ const AboutScreen = () => {
         {
             id: 3,
             name: 'Statue of Liberty',
-            image: 'https://images.unsplash.com/photo-1543716091-a840c05249ec?w=400', // NEW WORKING LINK
+            image: 'https://images.unsplash.com/photo-1543716091-a840c05249ec?w=400',
         },
         {
             id: 4,
@@ -79,7 +79,7 @@ const aboutStyles = StyleSheet.create({
     gridItem: {
         width: '48%',
         backgroundColor: '#fff',
-        borderRadius: 10,
+        borderRadius: 10, 
         marginBottom: 15,
         elevation: 3,
         shadowColor: '#000',

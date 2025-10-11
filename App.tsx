@@ -2,10 +2,12 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import lab5 from './src/lab05/lab5';
 import BottomTabNavigator from './src/assignment02/BottomTabNavigation';
 import Practice from './src/assignment01/practice';
+
+import lab5 from './src/lab05/lab5';
 import lab6 from './src/lab06/lab6';
+import TabNavigator from './src/lab07/TabNavigator';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +22,10 @@ function App() {
 
         {/* <Stack.Screen name="Lab5" component={lab5} /> */}
 
-        <Stack.Screen name="Lab6" component={lab6} />
+        {/* <Stack.Screen name="Lab6" component={lab6} /> */}
+
+        <Stack.Screen name="TabNavigator" component={TabNavigator} />
+
 
       </Stack.Navigator>
     </NavigationContainer>

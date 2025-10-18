@@ -8,6 +8,7 @@ import Practice from './src/assignment01/practice';
 import lab5 from './src/lab05/lab5';
 import lab6 from './src/lab06/lab6';
 import TabNavigator from './src/lab07/TabNavigator';
+import Quiz01 from './src/quiz01/Quiz01';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,7 +25,9 @@ function App() {
 
         {/* <Stack.Screen name="Lab6" component={lab6} /> */}
 
-        <Stack.Screen name="TabNavigator" component={TabNavigator} />
+        {/* <Stack.Screen name="TabNavigator" component={TabNavigator} /> */}
+
+        <Stack.Screen name="Quiz01" component={Quiz01}/>
 
 
       </Stack.Navigator>

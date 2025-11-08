@@ -13,8 +13,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Quiz01() {
 
-    const [displayName, setDisplayName] = useState('Abrar Ali');
+    const [displayName, setDisplayName] = useState('Abrar Ali'); 
     const [username, setUsername] = useState('');
+
     const [validationMessage, setValidationMessage] = useState('');
 
     const { width, height } = useWindowDimensions();

@@ -2,14 +2,15 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import BottomTabNavigator from './src/assignment02/BottomTabNavigation';
 import Practice from './src/assignment01/practice';
+import BottomTabNavigator from './src/assignment02/BottomTabNavigation';
+import SmartHomeNavigator from './src/assignment03/SmartHomeNavigator';
 
 import lab5 from './src/lab05/lab5';
 import lab6 from './src/lab06/lab6';
+import TabNavigator from './src/lab07/TabNavigator';
 import Lab12Screen from './src/lab12/Lab12Screen';
 
-import TabNavigator from './src/lab07/TabNavigator';
 import Quiz01 from './src/quiz01/Quiz01';
 import Quiz03 from './src/quiz03/Quiz03';
 
@@ -35,7 +36,10 @@ function App() {
 
         {/* <Stack.Screen name="Quiz03" component={Quiz03}/> */}
 
-        <Stack.Screen name="Lab12" component={Lab12Screen} />
+        {/* <Stack.Screen name="Lab12" component={Lab12Screen} /> */}
+
+        <Stack.Screen name="SmartHome" component={SmartHomeNavigator} />
+
 
       </Stack.Navigator>
     </NavigationContainer>

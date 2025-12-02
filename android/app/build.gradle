@@ -85,6 +85,13 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    
+    configurations.all {
+        resolutionStrategy {
+            force 'com.google.android.gms:play-services-location:21.0.1'
+            force 'com.google.android.gms:play-services-maps:18.1.0'
+        }
+    }
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -116,4 +123,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    
+    // Google Maps and Location Services for react-native-maps and geolocation
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
 }

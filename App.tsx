@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Practice from './src/assignment01/practice';
 import BottomTabNavigator from './src/assignment02/BottomTabNavigation';
 import SmartHomeNavigator from './src/assignment03/SmartHomeNavigator';
+import SmartTrackerNavigator from './src/assignment04/SmartTrackerNavigator';
 
 import lab5 from './src/lab05/lab5';
 import lab6 from './src/lab06/lab6';
@@ -38,7 +39,9 @@ function App() {
 
         {/* <Stack.Screen name="Lab12" component={Lab12Screen} /> */}
 
-        <Stack.Screen name="SmartHome" component={SmartHomeNavigator} />
+        {/* <Stack.Screen name="SmartHome" component={SmartHomeNavigator} /> */}
+
+        <Stack.Screen name="SmartTracker" component={SmartTrackerNavigator} />
 
 
       </Stack.Navigator>
